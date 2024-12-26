@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "76c7fe37-f57c-47cb-accd-3efba971b52f",
+		"name": "AuthorSphere",
+		"description": "#### ✨ Key Features:\n\nAuthor Management: Add, view, and list authors with attributes like name and pen name.  \nBook Management: Create, retrieve, and paginate books with details like title, category, price, and author association.  \nData Validation: Built-in checks for valid inputs like numeric prices and existing authors.  \nDetailed Relationships: Explore the one-to-many relationship between authors and their books.  \nPagination: Efficiently handle large datasets with paginated API responses.\n\n#### 📦 Tech Stack:\n\nFastAPI for fast, scalable web APIs.  \nSQLAlchemy for seamless database interaction.  \nMySQL for data persistence.  \nPydantic for data validation and serialization.\n\nEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22315211"
+	},
+	"item": [
+		{
+			"name": "Author List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/author",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Kamalkant Upadhyay\",\r\n    \"pen_name\":\"Pandit JI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/author",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "The Holy Land",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Horror",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "321",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/book/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/book/?page_size=1&page=3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						""
+					],
+					"query": [
+						{
+							"key": "page_size",
+							"value": "1"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Detailed Author info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/author_details/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"author_details",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
