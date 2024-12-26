@@ -31,7 +31,7 @@ Would love to hear your feedback, ideas, or similar experiences! 🌟
 
 
 ## Pre-Requisites
-Python
+Python  
 MySQL
 
 ## Steps to Run
