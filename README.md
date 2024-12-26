@@ -22,9 +22,18 @@ Database models with relationships.
 Dependency injection for database sessions.  
 Response models for consistent API output.  
 #### 🎯 Why I Loved Building This:
-Working on this project deepened my understanding of relational databases, ORM techniques, and building scalable, production-ready APIs. It's a small step toward mastering backend development.
+Working on this project deepened my understanding of relational databases, ORM techniques, and building scalable, production-ready APIs. It's a small step toward mastering backend development using FastAPI.
 
 #### 💡 Next Steps:
 I’m exploring ways to enhance this project by adding authentication, advanced search functionality, and deployment to the cloud.
 
 Would love to hear your feedback, ideas, or similar experiences! 🌟
+
+
+## Pre-Requisites
+Python
+MySQL
+
+## Steps to Run
+1. pip install -r requirements.txt
+2. uvicorn project:app --reload
