@@ -12,16 +12,16 @@ I've recently built a FastAPI application that combines the power of Python with
 
 #### 📦 Tech Stack:
 
-FastAPI for fast, scalable web APIs. \n
-SQLAlchemy for seamless database interaction. \n
-MySQL for data persistence.
-Pydantic for data validation and serialization.
-🔍 Check out the code snippet below to see how I implemented:
+FastAPI for fast, scalable web APIs.  
+SQLAlchemy for seamless database interaction.  
+MySQL for data persistence.  
+Pydantic for data validation and serialization.  
+#### 🔍 Check out the code snippet to see how I implemented:  
 
-Database models with relationships.
-Dependency injection for database sessions.
-Response models for consistent API output.
-🎯 Why I Loved Building This:
+Database models with relationships.  
+Dependency injection for database sessions.  
+Response models for consistent API output.  
+#### 🎯 Why I Loved Building This:
 Working on this project deepened my understanding of relational databases, ORM techniques, and building scalable, production-ready APIs. It's a small step toward mastering backend development.
 
 #### 💡 Next Steps:
